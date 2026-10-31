@@ -1,0 +1,6 @@
+{
+  "name": "Laxmi Newspaper Services",
+  "description": "Daily morning newspaper delivery at 6:00 AM (all papers ₹180/mo) & template pamphlet distribution (1000 = ₹300) in Naroda & Nikol, Ahmedabad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

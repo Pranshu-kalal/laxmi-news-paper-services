@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy-deep: #060b19;
+    --navy-surface: #0c1427;
+    --navy-card: #111b33;
+    --navy-border: #1e2b4d;
+    --gold-primary: #d4af37;
+    --gold-light: #f3e5ab;
+    --gold-dark: #aa820a;
+    --red-accent: #c5221f;
+    --paper-white: #fbf9f4;
+    --paper-cream: #f4efe6;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--navy-deep);
+    color: var(--paper-white);
+  }
+
+  ::selection {
+    background-color: #d4af37;
+    color: #060b19;
+  }
+}
+
+.font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-mono-num {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom newspaper texture pattern */
+.bg-newspaper-grid {
+  background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-dot-matrix {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fef08a 0%, #d4af37 50%, #aa820a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Red accent gradient text */
+.text-red-gradient {
+  background: linear-gradient(135deg, #f87171 0%, #dc2626 50%, #991b1b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphic border */
+.glass-panel {
+  background: rgba(12, 20, 39, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glass-card {
+  background: linear-gradient(145deg, rgba(17, 27, 51, 0.85) 0%, rgba(9, 15, 30, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card:hover {
+  border-color: rgba(212, 175, 55, 0.35);
+  box-shadow: 0 12px 32px -8px rgba(212, 175, 55, 0.12);
+}
+
+/* Vintage paper card style */
+.newspaper-paper-card {
+  background-color: #f7f4ed;
+  color: #1a1a1a;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), inset 0 0 40px rgba(180, 160, 130, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #060b19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2b4d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
